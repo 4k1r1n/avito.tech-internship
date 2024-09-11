@@ -1,4 +1,4 @@
-type Advertisment = {
+export type AdvertisementInfo = {
   /* Уникальный идентификатор. */
   id: string;
   /* Название. */
@@ -17,8 +17,7 @@ type Advertisment = {
   imageUrl?: string;
 }
 
-
-const OrderStatus = {
+export const OrderStatus = {
   Created: 0,
   Paid: 1,
   Transport: 2,
@@ -29,9 +28,9 @@ const OrderStatus = {
 } as const;
 
 
-type OrderItem = Advertisment & { count: number; };
+type OrderItem = AdvertisementInfo & { count: number; };
 
-type Order = {
+export type OrderInfo = {
   /* Уникальный идентификатор. */
   id: string;
   /* Статус. */
@@ -46,13 +45,4 @@ type Order = {
   deliveryWay: string;
   /* Сумма заказа */
   total: number;
-}
-
-type Image = {
-  /* Уникальный идентификатор. */
-  id: number;
-  /* Ссылка. */
-  url: string;
-  /* Название. */
-  name: string;
 }
