@@ -1,10 +1,6 @@
-import { Typography } from '@mui/material'
-import { FC } from 'react'
+import AdvertisementDetails from '@/components/sections/AdvertisementDetails';
+import { FC } from 'react';
 
-const AdvertisementId: FC = () => {
-  return (
-    <Typography>Объявление</Typography>
-  )
-}
+const AdvertisementId: FC = () => <AdvertisementDetails/>;
 
 export default AdvertisementId
