@@ -3,6 +3,10 @@ import AppRouter from './router/AppRouter'
 import { CssBaseline, GlobalStyles, ThemeProvider } from '@mui/material'
 import { theme } from './styles'
 import COLORS from './styles/colors'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+
+const queryClient = new QueryClient();
 
 const App: FC = () => {
   return (
@@ -29,7 +33,10 @@ const App: FC = () => {
         }
       }}
       />
-      <AppRouter />
+      <QueryClientProvider client={queryClient}>
+        <ReactQueryDevtools />
+        <AppRouter />
+      </QueryClientProvider>
     </ThemeProvider>
   )
 }
