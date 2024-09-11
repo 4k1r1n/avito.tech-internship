@@ -1,12 +1,12 @@
-import { ERoutes } from '@/router/routes'
+import { ROUTES } from '@/router/routes';
 import COLORS from '@/styles/colors';
 import { Box } from '@mui/material';
-import React, { FC } from 'react'
-import { NavLink } from 'react-router-dom'
+import { FC } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const navbarLinks = [
-  { name: 'Объявления', route: ERoutes.Advertisements },
-  { name: 'Заказы', route: ERoutes.Orders }
+  { name: 'Объявления', route: ROUTES.Advertisements },
+  { name: 'Заказы', route: ROUTES.Orders }
 ];
 
 const Navigation: FC = () => {

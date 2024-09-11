@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
-import { Outlet } from 'react-router-dom'
-import Navigation from './Navigation'
-import { AppBar, Container, Toolbar } from '@mui/material'
-import COLORS from '@/styles/colors'
+import React, { FC } from 'react';
+import { Outlet } from 'react-router-dom';
+import Navigation from './Navigation';
+import { AppBar, Container, Toolbar } from '@mui/material';
+import COLORS from '@/styles/colors';
 
 const Layout: FC = () => {
   return (
