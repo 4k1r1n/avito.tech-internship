@@ -17,7 +17,10 @@ export const useAdvertisementsStore = create<AdvertisementStoreState>()(
         search: '',
         setSearch: (search) => set({ search }),
       }),
-      { name: 'advertisements-store' }
+      { 
+        name: 'advertisements-store',
+        partialize: (state) => ({ search: state.search })
+      }
     )
   )
 );
