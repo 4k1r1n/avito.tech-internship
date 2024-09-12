@@ -1,9 +1,23 @@
-import { Typography } from '@mui/material'
-import React, { FC } from 'react'
+import { OrdersFilterForm } from '@/components/sections/OrdersFilterForm';
+import OrdersList from '@/components/sections/OrdersList';
+import { Typography } from '@mui/material';
+import { FC } from 'react';
 
 const Orders: FC = () => {
   return (
-    <Typography>Заказы</Typography>
+    <>
+      <Typography
+        variant='h3'
+        component='h1'
+        sx={{
+          marginBottom: '2rem'
+        }}
+      >
+        Заказы
+      </Typography>
+      <OrdersFilterForm />
+      <OrdersList />
+    </>
   )
 }
 
