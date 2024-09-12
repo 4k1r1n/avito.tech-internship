@@ -1,7 +1,6 @@
 import COLORS from '@/styles/colors';
 import { OrderInfo, OrderStatus } from '@/types';
-import { Box, Button, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import { Box, Button, Stack, Typography } from '@mui/material';
 import { FC, useMemo, useState } from 'react'
 import AdvertisementsList from '../sections/AdvertisementsList';
 
@@ -20,14 +19,7 @@ export const OrderCard: FC<OrderCardProps> = ({ order }) => {
   const statusCode = useMemo(() => getStatusCode(status), [status]);
 
   return (
-    <Grid
-      size={3}
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        cursor: 'pointer'
-      }}
-    >
+    <Stack>
       <Box
         sx={{
           padding: '1rem',
@@ -47,6 +39,6 @@ export const OrderCard: FC<OrderCardProps> = ({ order }) => {
         )}
         {isShowMore && (<AdvertisementsList />)}
       </Box>
-    </Grid>
+    </Stack>
   )
 }
