@@ -5,7 +5,7 @@ import { useAdvertisementsData } from '@/api/useAdvertisementsData';
 import { useAdvertisementsStore } from '@/stores/useAdvertisementsStore';
 import { AdvertisementInfo } from '@/types';
 import PaginationTrigger from '../ui/PaginationTrigger';
-import { FC, useMemo } from 'react';
+import { FC } from 'react';
 
 const AdvertisementsList: FC = () => {
   const limit = useAdvertisementsStore(({ limit }) => limit);
@@ -21,7 +21,6 @@ const AdvertisementsList: FC = () => {
     fetchNextPage,
   } = useAdvertisementsData({ limit, search });
 
-  const advertisements = useMemo(() => data?.pages.flat() ?? [], [data]);
 
   if (isLoading) {
     return (
@@ -46,10 +45,10 @@ const AdvertisementsList: FC = () => {
 
   return (
     <>
-      {isSuccess && advertisements?.length ? (
+      {isSuccess && data?.length ? (
         <>
           <Grid container spacing={5}>
-            {advertisements.map((advertisement: AdvertisementInfo) => (
+            {data.map((advertisement: AdvertisementInfo) => (
               <AdvertisementCard
                 key={advertisement.id}
                 advertisement={advertisement}

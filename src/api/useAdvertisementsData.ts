@@ -8,38 +8,45 @@ interface Options {
 }
 
 interface fetchOptions extends Options {
-  start: number;
+  page: number;
 }
 
-const fetchAdvertisements = async ({ limit, start, search }: fetchOptions) => {
+type ApiResponse = {
+  first: number;
+  prev: number | null;
+  next: number | null;
+  last: number;
+  pages: number;
+  items: number;
+  data: AdvertisementInfo[];
+}
+
+const fetchAdvertisements = async ({ limit, page, search }: fetchOptions) => {
   const url = new URL(`${import.meta.env.VITE_API_URL}/${API_ENDPOINTS.Advertisements}`);
   const searchParams = url.searchParams;
 
-  searchParams.set('_limit', limit);
-  searchParams.set('_start', `${start}`);
+  searchParams.set('_per_page', limit);
+  searchParams.set('_page', `${page}`);
+  
   if (search) searchParams.set('name', search);
 
   return await (await fetch(url)).json();
 };
 
 export const useAdvertisementsData = ({ limit, search }: Options) =>
-  useInfiniteQuery<AdvertisementInfo[]>({
+  useInfiniteQuery<ApiResponse, Error, AdvertisementInfo[]>({
     queryKey: ['advertisements', limit, search],
 
-    queryFn: ({ pageParam = 0 }) =>
+    queryFn: ({ pageParam = 0 }) => 
       fetchAdvertisements({ 
         limit, 
-        start: pageParam as number,
+        page: pageParam as number,
         search,
       }),
 
-    initialPageParam: 0,
+    initialPageParam: 1,
 
-    getNextPageParam: (lastPage, pages) => {
-      const start = pages.flat().length;
+    getNextPageParam: (lastPage) => lastPage.next,
 
-      if (lastPage.length) return start;
-
-      return;
-    },
+    select: ({ pages }) => pages.map(({ data }) => data).flat(),
   });
