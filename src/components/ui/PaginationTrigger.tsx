@@ -8,11 +8,7 @@ interface PaginationTriggerProps {
   onChange: () => void;
 };
 
-const PaginationTrigger: FC<PaginationTriggerProps> = ({
-  isLoading,
-  canLoad,
-  onChange,
-}) => {
+const PaginationTrigger: FC<PaginationTriggerProps> = ({ isLoading, canLoad, onChange }) => {
   const triggerRef = useRef(null);
 
   usePaginationObserver(triggerRef, isLoading, canLoad, onChange);
