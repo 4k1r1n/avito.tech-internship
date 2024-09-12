@@ -2,7 +2,7 @@ import COLORS from '@/styles/colors';
 import { OrderInfo, OrderStatus } from '@/types';
 import { Box, Button, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import React, { FC, useMemo, useState } from 'react'
+import { FC, useMemo, useState } from 'react'
 import AdvertisementsList from '../sections/AdvertisementsList';
 
 export type OrderCardProps = {
@@ -21,7 +21,6 @@ export const OrderCard: FC<OrderCardProps> = ({ order }) => {
 
   return (
     <Grid
-      component={'a'}
       size={3}
       sx={{
         display: 'flex',
