@@ -5,6 +5,7 @@ import COLORS from '@/styles/colors';
 import { useParams } from 'react-router-dom';
 import { useAdvertisementData } from '@/api/useAdvertisementData';
 import { UpdateAdvertisementModal } from '../blocks/UpdateAdvertisementModal';
+import ReadMoreText from '../ui/ReadMoreText';
 
 const AdvertisementDetails: FC = () => {
   const { id } = useParams();
@@ -32,7 +33,7 @@ const AdvertisementDetails: FC = () => {
           />
           <Box>
             <Typography variant='h6' component={'h2'}>{data.name}</Typography>
-            <Typography component={'p'}>{data.description}</Typography>
+            <ReadMoreText component={'p'}>{data.description}</ReadMoreText>
             <Typography component='p'>{data.price} ₽</Typography>
             <Box sx={{
               display: 'flex',
