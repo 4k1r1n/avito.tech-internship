@@ -8,7 +8,7 @@
       "createdAt": "2022-08-12T20:16:55.351Z",
       "views": 20,
       "likes": 2,
-      "imageUrl": ""
+      "imageUrl": "https://cs5.livemaster.ru/storage/36/26/e6e39624ed672212a83df24d2eb3--dlya-doma-i-interera-stulya-starinnyj-redkij-antikvarnyj-stul.jpg"
     },
     {
       "id": "2",
@@ -18,7 +18,7 @@
       "createdAt": "2023-08-12T20:16:55.351Z",
       "views": 77832,
       "likes": 45666,
-      "imageUrl": ""
+      "imageUrl": "https://otvet.imgsmail.ru/download/13808068_fa6b134f3466159773929ab840cc65da_800.jpg"
     },
     {
       "id": "3",
@@ -37,7 +37,7 @@
       "createdAt": "2024-07-12T20:16:55.351Z",
       "views": 2000000,
       "likes": 2,
-      "imageUrl": ""
+      "imageUrl": "https://ir.ozone.ru/s3/multimedia-3/c1000/6669779151.jpg"
     },
     {
       "id": "5",
@@ -46,7 +46,7 @@
       "createdAt": "2024-06-12T20:16:55.351Z",
       "views": 0,
       "likes": 0,
-      "imageUrl": ""
+      "imageUrl": "https://img.ostin.com/upload/mdm/media_content/resize/a17/767_1062_82d3/106378080299.jpg"
     },
     {
       "id": "6",
@@ -56,7 +56,7 @@
       "createdAt": "2024-04-12T20:16:55.351Z",
       "views": 1,
       "likes": 0,
-      "imageUrl": ""
+      "imageUrl": "https://lpack-spb.ru/image/cache/catalog/category/Korobki/gkorob-3-580x474.jpg"
     },
     {
       "id": "7",
@@ -75,6 +75,226 @@
       "createdAt": "2024-08-12T12:16:55.351Z",
       "views": 200000,
       "likes": 302,
+      "imageUrl": ""
+    },
+    {
+      "id": "9",
+      "name": "Мебельный гарнитур",
+      "description": "Элегантный и современный",
+      "price": 15000,
+      "createdAt": "2024-01-12T20:16:55.351Z",
+      "views": 300,
+      "likes": 20,
+      "imageUrl": ""
+    },
+    {
+      "id": "10",
+      "name": "Кофемашина",
+      "description": "Супер мощная и удобная",
+      "price": 12000,
+      "createdAt": "2023-12-12T20:16:55.351Z",
+      "views": 500,
+      "likes": 100,
+      "imageUrl": ""
+    },
+    {
+      "id": "11",
+      "name": "Путеводитель по Европе",
+      "description": "Отличное руководство для путешествий",
+      "price": 500,
+      "createdAt": "2023-11-12T20:16:55.351Z",
+      "views": 150,
+      "likes": 30,
+      "imageUrl": ""
+    },
+    {
+      "id": "12",
+      "name": "Ретро велосипед",
+      "description": "В стиле 60-х годов",
+      "price": 3000,
+      "createdAt": "2023-10-12T20:16:55.351Z",
+      "views": 400,
+      "likes": 10,
+      "imageUrl": ""
+    },
+    {
+      "id": "13",
+      "name": "Блендер",
+      "description": "Для приготовления смузи и коктейлей",
+      "price": 1500,
+      "createdAt": "2023-09-12T20:16:55.351Z",
+      "views": 800,
+      "likes": 50,
+      "imageUrl": ""
+    },
+    {
+      "id": "14",
+      "name": "Фотоаппарат",
+      "description": "Высокое качество снимков",
+      "price": 8000,
+      "createdAt": "2023-08-12T20:16:55.351Z",
+      "views": 1000,
+      "likes": 80,
+      "imageUrl": ""
+    },
+    {
+      "id": "15",
+      "name": "Наушники",
+      "description": "Комфортные и с хорошим звуком",
+      "price": 2000,
+      "createdAt": "2023-07-12T20:16:55.351Z",
+      "views": 1200,
+      "likes": 60,
+      "imageUrl": ""
+    },
+    {
+      "id": "16",
+      "name": "Книга по программированию",
+      "description": "Учебник для начинающих",
+      "price": 2500,
+      "createdAt": "2023-06-12T20:16:55.351Z",
+      "views": 200,
+      "likes": 15,
+      "imageUrl": ""
+    },
+    {
+      "id": "17",
+      "name": "Смарт-часы",
+      "description": "Многофункциональные и стильные",
+      "price": 5000,
+      "createdAt": "2023-05-12T20:16:55.351Z",
+      "views": 700,
+      "likes": 40,
+      "imageUrl": ""
+    },
+    {
+      "id": "18",
+      "name": "Электрическая гитара",
+      "description": "Для настоящих музыкантов",
+      "price": 12000,
+      "createdAt": "2023-04-12T20:16:55.351Z",
+      "views": 300,
+      "likes": 25,
+      "imageUrl": ""
+    },
+    {
+      "id": "19",
+      "name": "Квадрокоптер",
+      "description": "С камерой и дистанционным управлением",
+      "price": 8000,
+      "createdAt": "2023-03-12T20:16:55.351Z",
+      "views": 500,
+      "likes": 35,
+      "imageUrl": ""
+    },
+    {
+      "id": "20",
+      "name": "Холодильник",
+      "description": "Энергосберегающий и вместительный",
+      "price": 15000,
+      "createdAt": "2023-02-12T20:16:55.351Z",
+      "views": 600,
+      "likes": 70,
+      "imageUrl": ""
+    },
+    {
+      "id": "21",
+      "name": "Гарнитур для ванной",
+      "description": "Современный и стильный",
+      "price": 10000,
+      "createdAt": "2023-01-12T20:16:55.351Z",
+      "views": 200,
+      "likes": 25,
+      "imageUrl": ""
+    },
+    {
+      "id": "22",
+      "name": "Гриль",
+      "description": "Идеален для летних барбекю",
+      "price": 4000,
+      "createdAt": "2022-12-12T20:16:55.351Z",
+      "views": 150,
+      "likes": 30,
+      "imageUrl": ""
+    },
+    {
+      "id": "23",
+      "name": "Эспрессо машина",
+      "description": "Для любителей крепкого кофе",
+      "price": 6000,
+      "createdAt": "2022-11-12T20:16:55.351Z",
+      "views": 350,
+      "likes": 45,
+      "imageUrl": ""
+    },
+    {
+      "id": "24",
+      "name": "Телевизор",
+      "description": "С высоким разрешением и умными функциями",
+      "price": 20000,
+      "createdAt": "2022-10-12T20:16:55.351Z",
+      "views": 800,
+      "likes": 60,
+      "imageUrl": ""
+    },
+    {
+      "id": "25",
+      "name": "Лампа настольная",
+      "description": "Элегантная и удобная",
+      "price": 1500,
+      "createdAt": "2022-09-12T20:16:55.351Z",
+      "views": 400,
+      "likes": 20,
+      "imageUrl": ""
+    },
+    {
+      "id": "26",
+      "name": "Игровая консоль",
+      "description": "Поддержка новейших игр",
+      "price": 25000,
+      "createdAt": "2022-08-12T20:16:55.351Z",
+      "views": 600,
+      "likes": 75,
+      "imageUrl": ""
+    },
+    {
+      "id": "27",
+      "name": "Сумка дорожная",
+      "description": "Прочная и вместительная",
+      "price": 3000,
+      "createdAt": "2022-07-12T20:16:55.351Z",
+      "views": 200,
+      "likes": 15,
+      "imageUrl": ""
+    },
+    {
+      "id": "28",
+      "name": "Светильник",
+      "description": "Мягкий и приятный свет",
+      "price": 2000,
+      "createdAt": "2022-06-12T20:16:55.351Z",
+      "views": 250,
+      "likes": 30,
+      "imageUrl": ""
+    },
+    {
+      "id": "29",
+      "name": "Кроссовки спортивные",
+      "description": "Удобные и стильные",
+      "price": 4000,
+      "createdAt": "2022-05-12T20:16:55.351Z",
+      "views": 500,
+      "likes": 40,
+      "imageUrl": ""
+    },
+    {
+      "id": "30",
+      "name": "Рюкзак",
+      "description": "Для активного отдыха",
+      "price": 2500,
+      "createdAt": "2022-04-12T20:16:55.351Z",
+      "views": 350,
+      "likes": 20,
       "imageUrl": ""
     }
   ],
@@ -138,6 +358,46 @@
           "likes": 0,
           "imageUrl": "",
           "count": 5
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "status": 4,
+      "createdAt": "2024-08-12T20:20:55.351Z",
+      "finishedAt": "2024-08-12T20:25:55.351Z",
+      "total": 300,
+      "deliveryWay": "sdek",
+      "items": [
+        {
+          "id": "19",
+          "name": "Квадрокоптер",
+          "description": "С камерой и дистанционным управлением",
+          "price": 8000,
+          "createdAt": "2023-03-12T20:16:55.351Z",
+          "views": 500,
+          "likes": 35,
+          "imageUrl": ""
+        },
+        {
+          "id": "20",
+          "name": "Холодильник",
+          "description": "Энергосберегающий и вместительный",
+          "price": 15000,
+          "createdAt": "2023-02-12T20:16:55.351Z",
+          "views": 600,
+          "likes": 70,
+          "imageUrl": ""
+        },
+        {
+          "id": "21",
+          "name": "Гарнитур для ванной",
+          "description": "Современный и стильный",
+          "price": 10000,
+          "createdAt": "2023-01-12T20:16:55.351Z",
+          "views": 200,
+          "likes": 25,
+          "imageUrl": ""
         }
       ]
     }
