@@ -1,8 +1,8 @@
 import COLORS from '@/styles/colors';
 import { OrderInfo, OrderStatus } from '@/types';
 import { Box, Button, Stack, Typography } from '@mui/material';
-import { FC, useMemo, useState } from 'react'
-import AdvertisementsList from '../sections/AdvertisementsList';
+import { FC, useState } from 'react'
+import { ListWithAdvertisementsCards } from './ListWithAdvertisementsCards';
 
 export type OrderCardProps = {
   order: OrderInfo,
@@ -16,7 +16,7 @@ export const OrderCard: FC<OrderCardProps> = ({ order }) => {
   const { items, total, id, createdAt, status, finishedAt } = order;
   const [isShowMore, setIsShowMore] = useState(false);
 
-  const statusCode = useMemo(() => getStatusCode(status), [status]);
+  const statusCode = getStatusCode(status);
 
   return (
     <Stack>
@@ -37,7 +37,7 @@ export const OrderCard: FC<OrderCardProps> = ({ order }) => {
         {(!isShowMore && items.length > 0) && (
           <Button variant='outlined' onClick={() => setIsShowMore(true)}>Показать все товары</Button>
         )}
-        {isShowMore && (<AdvertisementsList />)}
+        {isShowMore && (<ListWithAdvertisementsCards advertisements={items} />)}
       </Box>
     </Stack>
   )

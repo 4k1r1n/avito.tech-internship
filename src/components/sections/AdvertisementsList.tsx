@@ -1,11 +1,9 @@
 import { Box, CircularProgress, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid2';
-import AdvertisementCard from '../blocks/AdvertisementCard';
 import { useAdvertisementsData } from '@/api/useAdvertisementsData';
 import { useAdvertisementsStore } from '@/stores/useAdvertisementsStore';
-import { AdvertisementInfo } from '@/types';
 import PaginationTrigger from '../ui/PaginationTrigger';
 import { FC } from 'react';
+import { ListWithAdvertisementsCards } from '../blocks/ListWithAdvertisementsCards';
 
 const AdvertisementsList: FC = () => {
   const limit = useAdvertisementsStore(({ limit }) => limit);
@@ -20,7 +18,6 @@ const AdvertisementsList: FC = () => {
     hasNextPage,
     fetchNextPage,
   } = useAdvertisementsData({ limit, search });
-
 
   if (isLoading) {
     return (
@@ -47,15 +44,7 @@ const AdvertisementsList: FC = () => {
     <>
       {isSuccess && data?.length ? (
         <>
-          <Grid container spacing={5}>
-            {data.map((advertisement: AdvertisementInfo) => (
-              <AdvertisementCard
-                key={advertisement.id}
-                advertisement={advertisement}
-              />
-            ))}
-          </Grid>
-
+          <ListWithAdvertisementsCards advertisements={data} />
           <PaginationTrigger
             isLoading={isFetching}
             canLoad={hasNextPage}
