@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Outlet } from 'react-router-dom';
 import Navigation from './Navigation';
 import { AppBar, Container, Toolbar } from '@mui/material';

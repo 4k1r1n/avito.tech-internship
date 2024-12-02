@@ -7,7 +7,7 @@ import {
   InputAdornment,
   Button,
 } from '@mui/material';
-import React, { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 interface AdvertisementFormProps {
   advertisement?: AdvertisementInfo;
